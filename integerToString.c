@@ -106,27 +106,28 @@ char *convertStringBillion(unsigned long long int n)
 }
 int main(int argc, char **argv)
 {
-    int i;
+    //int i;
     unsigned long long int wantedNum, digitCnt;
-    char number[15];
-    digitCnt = 1;
-    i = 0;
+    //char number[15];
+    //digitCnt = 1;
+    //i = 0;
     printf("Write a number (MAX:999999999999): ");
-    scanf("%s", number);
-    for (i = 0; number[i] != '\0'; i++)
-    {
-        if (i != 0)
-        {
-            digitCnt *= 10;
-        }
-    }
+    scanf("%lld",&wantedNum);
+//     scanf("%s", number);
+//     for (i = 0; number[i] != '\0'; i++)
+//     {
+//         if (i != 0)
+//         {
+//             digitCnt *= 10;
+//         }
+//     }
 
-    wantedNum = 0;
-    for (i = 0; digitCnt != 0; digitCnt /= 10, i++)
-    {
-        int charToInt = number[i] - '0';
-        wantedNum += digitCnt * charToInt;
-    }
+//     wantedNum = 0;
+//     for (i = 0; digitCnt != 0; digitCnt /= 10, i++)
+//     {
+//         int charToInt = number[i] - '0';
+//         wantedNum += digitCnt * charToInt;
+//     }
 
     printf("Number = %s\n", convertStringBillion(wantedNum));
 
