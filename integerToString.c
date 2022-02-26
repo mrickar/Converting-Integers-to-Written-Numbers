@@ -113,6 +113,8 @@ int main(int argc, char **argv)
     //i = 0;
     printf("Write a number (MAX:999999999999): ");
     scanf("%lld",&wantedNum);
+    
+//if input is not integer and it is string, uncomment codes below.     
 //     scanf("%s", number);
 //     for (i = 0; number[i] != '\0'; i++)
 //     {
