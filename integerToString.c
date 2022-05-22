@@ -62,6 +62,7 @@ char *convertStringThousand(int n)
             strcat(str, convertStringHundred(n % THOUSAND));
         }
     }
+    
     return str;
 }
 char *convertStringMillion(int n)
